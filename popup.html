@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LexiLens Assistant</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <!-- Header with Toggle -->
+      <div class="header-controls">
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 24px;">⚖️</span>
+            <h2 class="app-title">LexiLens</h2>
+        </div>
+        <div class="toggle-container">
+          <span id="lang-label">EN</span>
+          <label class="switch">
+            <input type="checkbox" id="lang-toggle" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Initial Loading State -->
+      <div id="content-area"></div>
+      <div id="loading-state" style="margin-top: 40px; text-align: center">
+        <div class="spinner"></div>
+        <p style="color: #6b7280; font-weight: 500; margin-top: 16px">
+          Scanning legal terms...
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Logic -->
+    <script src="popup.js"></script>
+  </body>
+</html>
